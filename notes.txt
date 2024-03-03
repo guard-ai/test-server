@@ -1,0 +1,12 @@
+This is the test server. Since broadcastify has not responded,
+this was made so that we can test the pipeline.
+
+To try this out:
+Run the python file (Terminal: python main.py)
+Then send a random request to the server to start.
+
+I normally just open a different terminal and type:
+curl -X POST http://localhost:8000/process_and_post -H "Content-Type: application/json" -d '{"key": "value"}'
+
+Then simply speak into the mic, it should send the audio data into the
+main heimdall server (make sure the other server is actually hosted first).
